@@ -2,7 +2,7 @@
 # Advanced Data Analytics for NYC Taxi Trips
 
 ## Project Overview
-This project analyzes the New York City taxi trip dataset for the year 2021, employing Python for comprehensive data preprocessing, exploratory analysis, and predictive modeling with machine learning techniques. The goal is to understand key factors influencing taxi trip pricing and other related outcomes. The dataset includes over 30 million records, detailing pickup and dropoff times, locations, distances traveled, fares, and more.
+This project analyzes the New York City taxi trip dataset for the year 2023, employing Python for comprehensive data preprocessing, exploratory analysis, and predictive modeling with machine learning techniques. The goal is to understand key factors influencing taxi trip pricing and other related outcomes. The dataset includes over 30 million records, detailing pickup and dropoff times, locations, distances traveled, fares, and more.
 
 ## Dataset
 The data is sourced from the NYC Open Data portal and has been pre-processed into four partitions to manage the large volume. Each file contains detailed trip records including:
@@ -36,16 +36,19 @@ This project uses Python 3. Install the required packages with:
 ```
 pip install -r requirements.txt
 ```
+Required Packages: 
+!pip install pyarrow
+!pip install fastparquet
+!pip install geopandas
 
 ## Usage
 Each Jupyter Notebook in the repository corresponds to different stages of the project:
-- **Data_Preparation.ipynb**: Initial data loading and partitioning.
+- **1.**: Initial data loading and partitioning.
 - **Data_Cleaning_and_Preprocessing.ipynb**: Cleaning and preprocessing steps applied to the data.
 - **Exploratory_Data_Analysis.ipynb**: Exploratory data analysis to uncover trends and insights.
 - **Model_Building_and_Evaluation.ipynb**: Building and evaluating predictive models.
 
-## Contributing
-Contributions are welcome! Please read the contributing guidelines before starting any work.
+
 
 ## Contact
 **Mariam Dolidze**  
