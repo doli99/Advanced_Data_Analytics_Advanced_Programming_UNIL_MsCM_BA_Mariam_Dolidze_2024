@@ -61,7 +61,10 @@ Each Jupyter Notebook in the repository corresponds to different stages of the p
 - **5.** Data Preparation for Modeling and Model building and Evaluation
   - In this notebook we normalize data, scale and encode it and drop unecessary features
   - we use the new modeling dataset for model building and testing
-  - This notebook can be initialised from model testing part where one can use already created modeling parquet file   
+  - This notebook can be initialised from model testing part where one can use already created modeling parquet file
+- **6.** GUI (NOTEBOOK VERSION)
+  - In this notebook we created interactive GUI using tkinter for visualising the sample dataset easier for users.
+  - This file in notebook can be run in anaconda environment using all the imports and requirements listed in the requirements.txt
 
 
 ## Contact
