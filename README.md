@@ -41,13 +41,27 @@ Required Packages:
 !pip install fastparquet
 !pip install geopandas
 
+
 ## Usage
 Each Jupyter Notebook in the repository corresponds to different stages of the project:
-- **1.**: Initial data loading and partitioning.
-- **Data_Cleaning_and_Preprocessing.ipynb**: Cleaning and preprocessing steps applied to the data.
-- **Exploratory_Data_Analysis.ipynb**: Exploratory data analysis to uncover trends and insights.
-- **Model_Building_and_Evaluation.ipynb**: Building and evaluating predictive models.
-
+- **1.** Data Fetching From Official Website And Combination For Further Analysis
+  - Using this notebook we will fetch 2023 parquet files from NYC website and combine into combined dataframe
+  - For memory optimization this step does not have to be repeated as we have prvided saved datset in our data storage
+- **2.** Initial Data Cleaning from nulls, negatives and duplicates
+  - In this notebook we load combined dataset for preliminary cleaning
+  - Get rid of null values, duplicates and uneccesary features for our future analysis
+  - We save the results in cleaned version thus negating the need to run this notebook for modeling as the dataset is quite large 
+- **3.** Feature Enginerring and Stratified Sampling
+  - In this dataset we create features for our dataset based on domain knowledge and litarature review
+  - We create sampled dataset for further EDA and modeling as the initial dataset is too large
+  - Thus to validate the notebook one can load the feature engineered dataset and test that it works    
+- **4.** EDA on Stratified Sampled Data
+  - For eda we use feature engineered and sample ddataset for run time and memory optimiziation
+  - We use univariate, bivariate analysis to understand relationships and data structures for future modeling
+- **5.** Data Preparation for Modeling and Model building and Evaluation
+  - In this notebook we normalize data, scale and encode it and drop unecessary features
+  - we use the new modeling dataset for model building and testing
+  - This notebook can be initialised from model testing part where one can use already created modeling parquet file   
 
 
 ## Contact
