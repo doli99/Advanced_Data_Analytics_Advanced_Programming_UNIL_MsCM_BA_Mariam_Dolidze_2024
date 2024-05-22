@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d7d1c64946cb6b8f693ad1d09e26c2e9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d7d1c64946cb6b8f693ad1d09e26c2e9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d7d1c64946cb6b8f693ad1d09e26c2e9 = L.map(
+                "map_d7d1c64946cb6b8f693ad1d09e26c2e9",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_905fbad382cf3b84434e5d35a8699c4d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+            var circle_marker_405e469b3c104e180ce7890cf87a1845 = L.circleMarker(
+                [40.6413, -73.7781],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+        var popup_a9e7be3c274f396a0f29aa2eb2a66206 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f22c671972ab99209b507a33f32110de = $(`<div id="html_f22c671972ab99209b507a33f32110de" style="width: 100.0%; height: 100.0%;">JFK Airport - Airport</div>`)[0];
+                popup_a9e7be3c274f396a0f29aa2eb2a66206.setContent(html_f22c671972ab99209b507a33f32110de);
+            
+        
+
+        circle_marker_405e469b3c104e180ce7890cf87a1845.bindPopup(popup_a9e7be3c274f396a0f29aa2eb2a66206)
+        ;
+
+        
+    
+    
+            var circle_marker_fe9789865a831c20e499f51f08064d50 = L.circleMarker(
+                [40.7769, -73.874],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+        var popup_74f586b2b4e6a97d1e56b3c1480614ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bcecac49cf0026c28a9b817a86b3448 = $(`<div id="html_6bcecac49cf0026c28a9b817a86b3448" style="width: 100.0%; height: 100.0%;">LaGuardia Airport - Airport</div>`)[0];
+                popup_74f586b2b4e6a97d1e56b3c1480614ae.setContent(html_6bcecac49cf0026c28a9b817a86b3448);
+            
+        
+
+        circle_marker_fe9789865a831c20e499f51f08064d50.bindPopup(popup_74f586b2b4e6a97d1e56b3c1480614ae)
+        ;
+
+        
+    
+    
+            var circle_marker_87df7d72bd1751e0dc2b2c86414a274d = L.circleMarker(
+                [40.7831, -73.9712],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+        var popup_fc2b5cb9e14a26ea48eb05e15d595bd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66c1f469b55a583cf7e796103123c1b1 = $(`<div id="html_66c1f469b55a583cf7e796103123c1b1" style="width: 100.0%; height: 100.0%;">Manhattan - City Center</div>`)[0];
+                popup_fc2b5cb9e14a26ea48eb05e15d595bd3.setContent(html_66c1f469b55a583cf7e796103123c1b1);
+            
+        
+
+        circle_marker_87df7d72bd1751e0dc2b2c86414a274d.bindPopup(popup_fc2b5cb9e14a26ea48eb05e15d595bd3)
+        ;
+
+        
+    
+    
+            var circle_marker_4a7f055a508f0487426074641f8c75b9 = L.circleMarker(
+                [40.6782, -73.9442],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+        var popup_9f27f51060b8a79eaf8a8053082e8693 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef3b255f79cedc3d129a05adbe94a0f1 = $(`<div id="html_ef3b255f79cedc3d129a05adbe94a0f1" style="width: 100.0%; height: 100.0%;">Brooklyn - Suburbs</div>`)[0];
+                popup_9f27f51060b8a79eaf8a8053082e8693.setContent(html_ef3b255f79cedc3d129a05adbe94a0f1);
+            
+        
+
+        circle_marker_4a7f055a508f0487426074641f8c75b9.bindPopup(popup_9f27f51060b8a79eaf8a8053082e8693)
+        ;
+
+        
+    
+    
+            var circle_marker_4ad5d677e4708ef36c2c5557b4f63e58 = L.circleMarker(
+                [40.7282, -73.7949],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+        var popup_8ec3b85509b747544adc68c0242206f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2f8df872dd1e904fd412f58a47d26be = $(`<div id="html_c2f8df872dd1e904fd412f58a47d26be" style="width: 100.0%; height: 100.0%;">Queens - Suburbs</div>`)[0];
+                popup_8ec3b85509b747544adc68c0242206f8.setContent(html_c2f8df872dd1e904fd412f58a47d26be);
+            
+        
+
+        circle_marker_4ad5d677e4708ef36c2c5557b4f63e58.bindPopup(popup_8ec3b85509b747544adc68c0242206f8)
+        ;
+
+        
+    
+    
+            var circle_marker_8943f61c25b3a6a8015bed88644100ee = L.circleMarker(
+                [40.8448, -73.8648],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+        var popup_f372f41fe5851b93709e995398e95d52 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f07c4049688a086af42b752839f2dd12 = $(`<div id="html_f07c4049688a086af42b752839f2dd12" style="width: 100.0%; height: 100.0%;">Bronx - Suburbs</div>`)[0];
+                popup_f372f41fe5851b93709e995398e95d52.setContent(html_f07c4049688a086af42b752839f2dd12);
+            
+        
+
+        circle_marker_8943f61c25b3a6a8015bed88644100ee.bindPopup(popup_f372f41fe5851b93709e995398e95d52)
+        ;
+
+        
+    
+    
+            var circle_marker_99be0df9f4d5c281ecffc154aee0e6f0 = L.circleMarker(
+                [40.5795, -74.1502],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_d7d1c64946cb6b8f693ad1d09e26c2e9);
+        
+    
+        var popup_7795ac3fe7addca28ec6b1fe33516ca0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e65172eef2f346c944616ad7872232e8 = $(`<div id="html_e65172eef2f346c944616ad7872232e8" style="width: 100.0%; height: 100.0%;">Staten Island - Suburbs</div>`)[0];
+                popup_7795ac3fe7addca28ec6b1fe33516ca0.setContent(html_e65172eef2f346c944616ad7872232e8);
+            
+        
+
+        circle_marker_99be0df9f4d5c281ecffc154aee0e6f0.bindPopup(popup_7795ac3fe7addca28ec6b1fe33516ca0)
+        ;
+
+        
+    
+</script>
+</html>

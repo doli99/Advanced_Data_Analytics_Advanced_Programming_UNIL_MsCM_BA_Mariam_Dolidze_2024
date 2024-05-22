@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1c9608f3563dcb9f87b6dac11a09285a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1c9608f3563dcb9f87b6dac11a09285a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1c9608f3563dcb9f87b6dac11a09285a = L.map(
+                "map_1c9608f3563dcb9f87b6dac11a09285a",
+                {
+                    center: [41.7151, 44.8271],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f92bd2a11b7a03990eee67e19fd4de18 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_1c9608f3563dcb9f87b6dac11a09285a);
+        
+    
+            var circle_marker_3432cad9d838788466a122086be209fb = L.circleMarker(
+                [41.6692, 44.9547],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_1c9608f3563dcb9f87b6dac11a09285a);
+        
+    
+        var popup_b9c3d09214e71e3194e13bd2e91f8aa0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f5efe0baf745409b7580c84a7fc8395 = $(`<div id="html_0f5efe0baf745409b7580c84a7fc8395" style="width: 100.0%; height: 100.0%;">Tbilisi International Airport - Airport</div>`)[0];
+                popup_b9c3d09214e71e3194e13bd2e91f8aa0.setContent(html_0f5efe0baf745409b7580c84a7fc8395);
+            
+        
+
+        circle_marker_3432cad9d838788466a122086be209fb.bindPopup(popup_b9c3d09214e71e3194e13bd2e91f8aa0)
+        ;
+
+        
+    
+    
+            var circle_marker_0ac13d9612b8ed7eeacd551daf2282ff = L.circleMarker(
+                [41.70468026991519, 44.78827196653668],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_1c9608f3563dcb9f87b6dac11a09285a);
+        
+    
+        var popup_e56688f0a155e79fdea0cf926894ad37 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97a06529308eff253e5d6699530947d3 = $(`<div id="html_97a06529308eff253e5d6699530947d3" style="width: 100.0%; height: 100.0%;">Rustaveli - City Center</div>`)[0];
+                popup_e56688f0a155e79fdea0cf926894ad37.setContent(html_97a06529308eff253e5d6699530947d3);
+            
+        
+
+        circle_marker_0ac13d9612b8ed7eeacd551daf2282ff.bindPopup(popup_e56688f0a155e79fdea0cf926894ad37)
+        ;
+
+        
+    
+    
+            var circle_marker_ae515b092556643f7c2733ac273148c5 = L.circleMarker(
+                [41.72142368696159, 44.73859312275902],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_1c9608f3563dcb9f87b6dac11a09285a);
+        
+    
+        var popup_68480707e2b1e57f1b6f97c8c5313d7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39e6eb8cdbbb3d6c26142dace02bc069 = $(`<div id="html_39e6eb8cdbbb3d6c26142dace02bc069" style="width: 100.0%; height: 100.0%;">Saburtalo - City Center</div>`)[0];
+                popup_68480707e2b1e57f1b6f97c8c5313d7f.setContent(html_39e6eb8cdbbb3d6c26142dace02bc069);
+            
+        
+
+        circle_marker_ae515b092556643f7c2733ac273148c5.bindPopup(popup_68480707e2b1e57f1b6f97c8c5313d7f)
+        ;
+
+        
+    
+    
+            var circle_marker_d1c173bb4e9676f651fc38fa86b5a4c2 = L.circleMarker(
+                [41.70965629877695, 44.75812197660645],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_1c9608f3563dcb9f87b6dac11a09285a);
+        
+    
+        var popup_6621ceded03f20ba6bf88db6ec5b3bbc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5357db20013d90f163f90ffeb13ebc26 = $(`<div id="html_5357db20013d90f163f90ffeb13ebc26" style="width: 100.0%; height: 100.0%;">Vake - City Center</div>`)[0];
+                popup_6621ceded03f20ba6bf88db6ec5b3bbc.setContent(html_5357db20013d90f163f90ffeb13ebc26);
+            
+        
+
+        circle_marker_d1c173bb4e9676f651fc38fa86b5a4c2.bindPopup(popup_6621ceded03f20ba6bf88db6ec5b3bbc)
+        ;
+
+        
+    
+    
+            var circle_marker_c4de1e8ce5085f2df3a867123f1db399 = L.circleMarker(
+                [41.76214069867475, 44.769802088973634],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_1c9608f3563dcb9f87b6dac11a09285a);
+        
+    
+        var popup_eef2156235707b08479214bcfe07a371 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51d5ccca900d2463921aa24b56b13f02 = $(`<div id="html_51d5ccca900d2463921aa24b56b13f02" style="width: 100.0%; height: 100.0%;">Dighomi - Suburbs</div>`)[0];
+                popup_eef2156235707b08479214bcfe07a371.setContent(html_51d5ccca900d2463921aa24b56b13f02);
+            
+        
+
+        circle_marker_c4de1e8ce5085f2df3a867123f1db399.bindPopup(popup_eef2156235707b08479214bcfe07a371)
+        ;
+
+        
+    
+    
+            var circle_marker_4803f0d1d7c0c87f59e733856e5006ca = L.circleMarker(
+                [41.78864616979187, 44.82597034123732],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50, "stroke": true, "weight": 3}
+            ).addTo(map_1c9608f3563dcb9f87b6dac11a09285a);
+        
+    
+        var popup_38e9d1c772cdf5faf8f17d0b42b7b432 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7255bdbd507b18b28aa426eebc832d5d = $(`<div id="html_7255bdbd507b18b28aa426eebc832d5d" style="width: 100.0%; height: 100.0%;">Mukhiani - Suburbs</div>`)[0];
+                popup_38e9d1c772cdf5faf8f17d0b42b7b432.setContent(html_7255bdbd507b18b28aa426eebc832d5d);
+            
+        
+
+        circle_marker_4803f0d1d7c0c87f59e733856e5006ca.bindPopup(popup_38e9d1c772cdf5faf8f17d0b42b7b432)
+        ;
+
+        
+    
+</script>
+</html>
