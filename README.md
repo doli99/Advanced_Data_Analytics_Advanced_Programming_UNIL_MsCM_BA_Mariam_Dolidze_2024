@@ -68,6 +68,8 @@ Each Jupyter Notebook in the repository corresponds to different stages of the p
  
 ## RUNNING NOTEBOK 6:
 # Navigate to the project directory
+Directory must include environment files, logo.png, and gui script to run smoothly.
+
 cd path/to/your/project
 
 ## Running with Anaconda Navigator:
