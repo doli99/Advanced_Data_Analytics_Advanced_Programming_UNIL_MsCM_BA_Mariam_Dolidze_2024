@@ -65,6 +65,27 @@ Each Jupyter Notebook in the repository corresponds to different stages of the p
 - **6.** GUI (NOTEBOOK VERSION)
   - In this notebook we created interactive GUI using tkinter for visualising the sample dataset easier for users.
   - This file in notebook can be run in anaconda environment using all the imports and requirements listed in the requirements.txt
+ 
+## RUNNING NOTEBOK 6:
+# Navigate to the project directory
+cd path/to/your/project
+
+# Activate the conda environment
+conda activate taxi_fare_prediction_env
+
+# Install missing extensions
+conda install -c conda-forge jupyter_nbextensions_configurator
+jupyter nbextensions_configurator enable --user
+
+conda install -c conda-forge pydeck
+jupyter nbextension enable --py --sys-prefix pydeck
+
+# Launch Jupyter Notebook
+jupyter notebook
+
+# Open the notebook and trust it if needed
+
+
 
 
 ## Contact
