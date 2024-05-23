@@ -70,20 +70,38 @@ Each Jupyter Notebook in the repository corresponds to different stages of the p
 # Navigate to the project directory
 cd path/to/your/project
 
+## Running with Anaconda Navigator:
+### How to Run `gui_script.py`
+
+#### Prerequisites
+1. **Anaconda Installation**: Download and install from Anaconda's official website.
+
+#### Steps to Run `gui_script.py`
+
+1. **Navigate to the Project Directory**:
+   ```bash
+   cd path/to/your/project
+
 # Activate the conda environment
 conda activate taxi_fare_prediction_env
-
-# Install missing extensions
+# Activate Environment
+conda env create -f environment.yml
+conda create -n taxi_fare_prediction_env python=3.8.2
+conda activate taxi_fare_prediction_env
+pip install -r requirements.txt
+conda activate taxi_fare_prediction_env
 conda install -c conda-forge jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user
 
-conda install -c conda-forge pydeck
-jupyter nbextension enable --py --sys-prefix pydeck
+# Run the script:
+python gui_script.py
 
-# Launch Jupyter Notebook
-jupyter notebook
+## Run Without Anaconda 
+pip install -r requirements.txt
+cd path/to/your/project
+python gui_script.py
 
-# Open the notebook and trust it if needed
+
 
 
 
