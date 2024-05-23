@@ -82,9 +82,9 @@ cd path/to/your/project
    ```bash
    cd path/to/your/project
 
-# Activate the conda environment
+### Activate the conda environment
 conda activate taxi_fare_prediction_env
-# Activate Environment
+### Activate Environment
 conda env create -f environment.yml
 conda create -n taxi_fare_prediction_env python=3.8.2
 conda activate taxi_fare_prediction_env
@@ -93,10 +93,10 @@ conda activate taxi_fare_prediction_env
 conda install -c conda-forge jupyter_nbextensions_configurator
 jupyter nbextensions_configurator enable --user
 
-# Run the script:
+## Run the script:
 python gui_script.py
 
-## Run Without Anaconda 
+# Run Without Anaconda 
 pip install -r requirements.txt
 cd path/to/your/project
 python gui_script.py
